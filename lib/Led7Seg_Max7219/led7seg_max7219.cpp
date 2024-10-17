@@ -95,7 +95,7 @@ void Led7seg_Max7219::setNumberH(long _addr, unsigned char _pos){
         led++;
     }
     if(led&1) setDigit(++led, 0);
-    setDigit(++led, HEX_SIGN);
+    setDigit(++led, HEX_SIGN, true);
     setDigit(++led, 0);
 }
 

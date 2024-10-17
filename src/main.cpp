@@ -47,4 +47,5 @@ void loop() {
     delay(50);
     led7.clear();
   }
+  delay(2000);
 }
