@@ -28,3 +28,23 @@ void loop() {
   led7.setDigit(5, MINUS_SIGN);
   led7.setDigit(6, DEGREE);
   delay(2000);
+
+  led7.clear();
+  led7.setNumber(-7654321);
+  delay(2000);
+
+  led7.clear();
+  led7.setDigit(2, 5, true);
+  delay(2000);
+
+  led7.clear();
+  led7.setNumberF(-3.1415, 4);
+  delay(2000);
+
+  led7.clear();
+  for(long i=256; i<512; i++){
+    led7.setNumberH(i);
+    delay(50);
+    led7.clear();
+  }
+}
